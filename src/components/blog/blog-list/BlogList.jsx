@@ -16,7 +16,6 @@ const BlogList = () => {
 
     const data = await response.json();
     setAuthors(data);
-    console.log(data);
   };
 
   return (
