@@ -5,17 +5,17 @@ import BlogAuthor from "../blog-author/BlogAuthor";
 import "./styles.css";
 const BlogItem = ({ author }) => {
   return (
-    <Link to={`/blog/${author.id}`} className="blog-link">
-      <Card className="blog-card">
-        <Card.Img variant="top" src={author.avatar} className="blog-cover" />
-        <Card.Body>
-          <Card.Title>{author.title}</Card.Title>
-        </Card.Body>
-        <Card.Footer>
-          <BlogAuthor {...author} />
-        </Card.Footer>
-      </Card>
-    </Link>
+    // <Link to={`/blog/${author.id}`} className="blog-link">
+    <Card className="blog-card">
+      <Card.Img variant="top" src={author.avatar} className="blog-cover" />
+      <Card.Body>
+        <Card.Title>{author.title}</Card.Title>
+      </Card.Body>
+      <Card.Footer>
+        <BlogAuthor {...author} />
+      </Card.Footer>
+    </Card>
+    // </Link>
   );
 };
 
