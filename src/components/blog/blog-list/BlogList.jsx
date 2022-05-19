@@ -12,6 +12,7 @@ const BlogList = () => {
 
   const getData = async () => {
     const apiUrl = process.env.REACT_APP_API_URL;
+    console.log(apiUrl);
     const response = await fetch(`${apiUrl}/authors`);
 
     const data = await response.json();
